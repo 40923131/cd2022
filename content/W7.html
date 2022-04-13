@@ -2,6 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -138,8 +139,58 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='每周任務.html'>Next</a> >> 每周任務<br /><h1>About</h1>
-<br /> <a href='每周任務.html'>Next</a> >> 每周任務</div>
+    <div id="tipue_search_content">W2 << <a href='W2.html'>Previous</a> <a href='ag5.html'>Next</a> >> ag5<br /><h1>W7</h1>
+<h4>設法以隨身程式系統編譯此程式碼:</h4>
+<ol>
+<li>git clone<span> </span><a href="https://github.com/mdecourse/scarysim.git">https://github.com/mdecourse/scarysim.git</a></li>
+<li>修改 scarysim.pro, 蓋掉第 11 行, 成為 # LIBS     += -lglut -lGLU</li>
+<li>cd scarysim</li>
+<li>qmake -o Makefile scarysim.pro</li>
+<li>mingw32-make -f Makefile.Release 可以在 release 目錄取得 scarysim.exe</li>
+<li>因為 scarysim.exe 執行需要 base.obj, arm1.obj, arm2.obj, arm3.obj 等零件外型檔案, 以及對應的 .mtl 材質檔案, 因此可將 scarysim.exe 移至倉儲根目錄執行.</li>
+<li>由於此套程式碼在 Target 模式下, 零組件間會造成干涉, 表示其 Inverse Kinematic 運算並不正確, 請設法修正此錯誤後, 修改其零件尺寸與操作控制方法, 設法模擬 MTB 的<span> </span><a href="https://www.youtube.com/results?search_query=mtb+robot">Pick and Place demo</a><span> </span>範例.</li>
+<li>請各組指定組員分別利用 Solvespace、NX12、NX1980、NX2008 與 Onshape 繪製<span> </span><a href="https://www.youtube.com/results?search_query=mtb+robot">Pick and Place demo</a><span> </span>範例所需的零組件, 並完成 Coppeliasim 4.1.0、4.2.0 與 4.3.0 版的 MTB 機械手臂 Pick and Place 模擬, 完成後請說明在使用不同 MCAD 系統與版次的情況下, 該如何執行協同產品設計專案.</li>
+</ol>
+<p><!-- ######################  editor1 結束 ###################### --></p>
+<p><!-- 以下可以開始利用 editor1 的設定編寫對應 Brython 程式 --></p>
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd1(ev):
+    # 注意這裡清除的畫布 id 為 brython_div
+    bd = doc["brython_div"]
+    bd.clear()
+Ace1 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run1():
+    # 利用 get 取下 src 變數值
+    try:
+        url = doc.query["src"]
+    except:
+        url = "https://gist.githubusercontent.com/mdecourse/05930b1775b77293523b59b1bbb43e57/raw/2ffeba334d9862a9b4d765f328bc95684879465e/grp2a_2022.py"
+    prog = open(url).read()
+
+    # 將程式載入編輯區
+    Ace1.editor.setValue(prog)
+    Ace1.editor.scrollToRow(0)
+    Ace1.editor.gotoLine(0)
+    # 直接執行程式
+    #ns = {'__name__':'__main__'}
+    #exec(prog, ns)
+    # 按下 run 按鈕
+    Ace1.run()
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+doc['kw_run1'].bind('click', Ace1.run)
+doc['kw_show_console1'].bind('click', Ace1.show_console)
+doc['kw_clear_console1'].bind('click', Ace1.clear_console)
+doc['clear_bd1'].bind('click', clear_bd1)
+# 呼叫函式執行
+run1()
+</script>
+<br />W2 << <a href='W2.html'>Previous</a> <a href='ag5.html'>Next</a> >> ag5</div>
         
     <!-- footer -->
       <div class="container">
