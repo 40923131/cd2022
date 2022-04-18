@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>cd2022</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-04-13T00:53:46+08:00</updated><entry><title>cd2022</title><link href="./w7_40923131.html" rel="alternate"></link><published>2022-04-12T10:26:00+08:00</published><updated>2022-04-13T00:13:22+08:00</updated><author><name>40923131</name></author><id>tag:None,2022-04-12:./w7_40923131.html</id><summary type="html">&lt;p&gt;測試&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;測試&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>cd2022</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2022-04-18T15:53:52+08:00</updated><entry><title>w8</title><link href="./w8_40923131.html" rel="alternate"></link><published>2022-04-15T10:26:00+08:00</published><updated>2022-04-18T15:53:52+08:00</updated><author><name>40923131</name></author><id>tag:None,2022-04-15:./w8_40923131.html</id><summary type="html">&lt;p&gt;這周畫的簡化零件圖
+https://cad.onshape.com/documents/3e864d170ec08d24a54944c2/w/96bdc8a89188408b47dc2d90/e/b1a56c579e6368d24fbe7a7c?renderMode=0&amp;amp;uiState=625d16f1fa512521add7f836&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;這周畫的簡化零件圖
+https://cad.onshape.com/documents/3e864d170ec08d24a54944c2/w/96bdc8a89188408b47dc2d90/e/b1a56c579e6368d24fbe7a7c?renderMode=0&amp;amp;uiState=625d16f1fa512521add7f836&lt;/p&gt;
 
 
 &lt;h2&gt;Python&lt;/h2&gt;
